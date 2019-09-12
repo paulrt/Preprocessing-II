@@ -9,6 +9,7 @@ nav {
     padding: 20px;
     width: 90%;
     font-size: 18px;
+    text-decoration: none;
 }
 .container-home {
     display: flex;
@@ -22,6 +23,16 @@ nav {
 img {
     display: flex;
     width: 100%;
-    margin: 20px 10px;
+    margin: 10px 10px;
     padding: auto;
+}
+.banner img {
+    width: 100%;
+    margin: 0px auto;
+    padding: auto;
+    
+}
+
+@media(min-width: 500px){
+
 }
