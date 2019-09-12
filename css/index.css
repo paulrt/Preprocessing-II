@@ -10,3 +10,11 @@ nav {
     width: 90%;
     font-size: 18px;
 }
+.container-home {
+    display: flex;
+    margin: 0px auto;
+    padding: 20px;
+    width: 500px;
+    height: 90%;
+    flex-flow: column wrap;
+}
