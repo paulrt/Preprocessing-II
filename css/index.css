@@ -18,3 +18,10 @@ nav {
     height: 90%;
     flex-flow: column wrap;
 }
+
+img {
+    display: flex;
+    width: 100%;
+    margin: 20px 10px;
+    padding: auto;
+}
