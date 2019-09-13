@@ -1,3 +1,17 @@
+html {
+    max-width
+}
+
+h1 {
+    font-family: 'Chilanka', cursive;
+    display: flex;
+    justify-content: center;
+    margin: 0px auto;
+    padding: auto;
+    width: 100%;
+    margin-top: 25px;
+}
+
 h2 {
     font-family: 'Permanent Marker', cursive;
 }
@@ -27,10 +41,14 @@ img {
     padding: auto;
 }
 .banner img {
-    width: 100%;
+    width: 500px;
     margin: 0px auto;
     padding: auto;
     
+}
+
+.line {
+    border-bottom: 2px dashed gray;
 }
 
 @media(min-width: 500px){
