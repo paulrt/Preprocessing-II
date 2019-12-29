@@ -27,37 +27,64 @@
     height:90%;
     background:@main-bg;
     border-bottom:2px dashed @navigation-border;
-    position:fixed;
-        .nav-bar{
-            height:100%;
+    display:flex;
+    margin:0 auto;
+    padding:auto;
+    .nav-bar{
+        height:100%;
+        display: flex;
+        flex-direction:column;
+        align-items: baseline;
+        justify-content: space-between;
+        padding:auto;
+        margin:0 auto;
+        @media @mobile{
             display: flex;
-            align-items: center;
-            justify-content: space-between;
-            @media @mobile{
-                flex-wrap:wrap;
-                justify-content: center;
-                padding-top:10px;
-            }
-            @media @mobile{
-                font-size:3rem;
-            }
+            flex-wrap:column;
+            justify-content: center;
+            align-items:center;
+            padding-top:10px;
+            padding:auto;
+            margin:0 auto;
         }
-        .nav {
-            width:350px;
-            display:flex;
-            justify-content: space-evenly;
-            @media @mobile{
-                width:100%;
-                justify-content: space-around;
-            }
-            a {
-                font-size:1.6rem;
-                color:@font;
-                text-decoration: none;
+        @media @mobile{
+            font-size:3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding:auto;
+            margin:0 auto;
+        }
+    }
+            .nav {
+                width:350px;
+                display:flex;
+                justify-content: space-evenly;
+                @media @mobile{
+                    display: flex;
+                    flex-direction: column;
+                    margin:0 auto;
+                    padding:auto;
+                    width:40%;
+                    justify-content: space-around;
+                }
+                .a {
+                    font-size:1.6rem;
+                    color:@font;
+                    text-decoration: none;
+                    @media @mobile{
+                        display:flex;
+                        justify-content: space-evenly;
+                        font-size:1.6rem;
+                        width:100%;
+                        margin:0 auto;
+                        padding:3%;
+                    }
             }
         }
     }
-}
+
     @media @mobile{
         display:flex;
         flex-flow:column nowrap;
@@ -78,8 +105,6 @@
             margin-left:4rem;
             width:90%;
             padding:auto;
-            }
-        }
     }
 }
 
