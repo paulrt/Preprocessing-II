@@ -1,1 +1,40 @@
 // Mixins in here
+.mobile(){
+    display: flex;
+    justify-content: space-between;
+    border-bottom: .2rem dashed @navigation-border;
+    padding:1.5rem 10%;
+    width:100%;
+}
+
+.flexfooter(){
+    display: flex;
+    justify-content: center;
+    background-color: @footer-bgc;
+    width:100%;
+}
+
+.border(){
+    border-top: .2rem dashed @navigation-border;
+}
+
+.text-layout{
+    display: flex;
+    flex-flow: column nowrap;
+    font-family:@font;
+    color:@font-color;
+}
+
+.button(){
+    font-size:1.6rem;
+    color:white;
+    text-align: center;
+    border:1px solid white;
+    background-color:@button-bgc;
+    padding:1rem 2rem;
+    border-radius: 1rem;
+
+    &:hover{
+        cursor:pointer;
+    }
+}
