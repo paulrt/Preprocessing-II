@@ -213,7 +213,7 @@ header nav a {
   border-top: 2px dashed silver;
   background: #FFEBCD;
 }
-.footer p {
+.footer .p {
   text-align: center;
   color: #212529;
   font-size: 1.6rem;
