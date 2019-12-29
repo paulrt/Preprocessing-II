@@ -1,13 +1,48 @@
 // Navigation Styles here
-nav {
-    display:flex;
-    width:100%;
-    margin:0px auto;
-    padding:auto;
-    border-bottom: 2px dotted gray;
-}
+// nav {
+//     display:flex;
+//     width:100%;
+//     margin:0px auto;
+//     padding:auto;
+// }
 
-nav .a {
-    display:flex;
-    justify-content: right;
+// nav .a {
+//     display:flex;
+//     border-bottom: 2px dotted gray;
+// }
+
+// nav .nav-text .a {
+//     display:flex;
+//     justify-content:flex-end;
+//     align-items: baseline;
+//     justify-content: space-evenly;
+//     width:80%;
+//     padding:0px;
+//     margin:0px auto;
+// }
+
+//Redo
+
+.mobile();
+    @media @mobile{
+        display:flex;
+        flex-flow:column nowrap;
+        justify-content: center;
+        align-items: center;
+        padding-bottom:.4rem;
+    }
+    nav{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        width:35%;
+        @media @mobile{
+            width:100%;
+            margin-top:1rem;
+        }
+        a{
+            text-decoration: none;
+            color: @font-color;
+        }
+    }
 }
