@@ -188,7 +188,7 @@ header {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
     padding-bottom: 0.4rem;
   }
 }

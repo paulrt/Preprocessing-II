@@ -13,4 +13,17 @@
 @eastern-blue: #17A2B8;
 @sandy-beach: #FFEBCD;
 
-@mobile:"(max-width:500px)";
+@mobile {
+    @media display(max-width:500px){};
+}
+//nav-flex mixin
+@nav-bar {
+    display:flex;
+    flex-direction:start;
+    justify-content:space-between;
+    align-items:baseline;
+    width:80%;
+    margin:0px auto;
+    padding:auto;
+
+}
